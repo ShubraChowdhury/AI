@@ -1,0 +1,16 @@
+custom_score_3:  At first I checks if the game was already concluded in the previous steps if so then it returns the score accordingly based on the winning and losing status. This heuristic is based on calculating available legal moves for the player and subsequently finding the length of the legal moves for both player and opponent.  Next determine the mid-point and the four corners of the board. Based on the position (center and corner) assign a score to the game.  
+ 
+   Analysis : I played 7 games to look for better results, AB_Improved (marked in green) had better score than the AB_Custom3 (marked in orange). This is not the best heuristic, but it is easily interpretable and fast to compute.
+custom_score_2:  This heuristic is based on Pythagoras's theorem basically calculating the hypotenuse between the player and the Board center. Basically measuring the diagonal position of the player from the center of the board. Before performing the calculation, this step first checks if the game was already concluded in the previous steps if so then it returns the score accordingly based on the winning and losing status.
+ 
+  Analysis : I played 7 games to look for better results, in all 7 games  AB_Improved (marked in green) had better score than the AB_Custom2.  Except the diagonal position this heuristic doesn’t provide any other information about the game.
+custom_score : This heuristics first checks if the game was already concluded in the previous steps if so then it returns the score accordingly based on the winning and losing status. As part of calculations this heuristics first checks if the length of players move is greater than the length of opponents  move, if true then return the two difference. For all other category it  compares the position with respect to center and reward based on positional advantage.  It finds the position of each player  and calculates the distance from its center and returns the difference of the two. In a grid of 7 by 7 min distance will be when the player is close to center and maximum will be when the player is farthest from the center.
+ 
+Among the 3 mentioned heuristics, the custom heuristics is the best in this case out of 7 games AB_customm is in lead. I recommend custom_score as the best evaluation function out of the three mentioned as this considers factors beyond the available length rather this compares the length between the player and the opponent,  in case if the length of the players move is not greater than the length of moves available for the opponent it does tries to consider the distance from the center which in turn provides a flexibility of next move.  
+Future enhancement:
+1.	Algorithm that would compare the corner cell move. Basically, penalizing the moves for the maximizing player that are in the corner and rewarding the moves for the minimizing player that are in the corner. 
+
+
+ 
+
+
