@@ -1,0 +1,37 @@
+Cargo planning.
+
+
+python run_search.py -p 1 -s 1 >> RESULT/P1_breadth_first_search.txt
+python run_search.py -p 1 -s 2 >> RESULT/P1_breadth_first_tree_search.txt
+python run_search.py -p 1 -s 3 >> RESULT/P1_depth_first_graph_search.txt
+python run_search.py -p 1 -s 4 >> RESULT/P1_depth_limited_search.txt
+python run_search.py -p 1 -s 5 >> RESULT/P1_uniform_cost_search.txt
+python run_search.py -p 1 -s 6 >> RESULT/P1_recursive_best_first_search_h_1.txt
+python run_search.py -p 1 -s 7 >> RESULT/P1_greedy_best_first_graph_search_h_1.txt
+python run_search.py -p 1 -s 8 >> RESULT/P1_astar_search_h_1.txt
+python run_search.py -p 1 -s 9 >> RESULT/P1_astar_search_h_ignore_preconditions.txt
+python run_search.py -p 1 -s 10 >> RESULT/P1_astar_search_h_pg_levelsum.txt
+
+
+python run_search.py -p 2 -s 1 >> RESULT/P2_breadth_first_search.txt
+python run_search.py -p 2 -s 2 >> RESULT/P2_breadth_first_tree_search.txt 
+python run_search.py -p 2 -s 3 >> RESULT/P2_depth_first_graph_search.txt
+python run_search.py -p 2 -s 4 >> RESULT/P2_depth_limited_search.txt  
+python run_search.py -p 2 -s 5 >> RESULT/P2_uniform_cost_search.txt
+python run_search.py -p 2 -s 6 >> RESULT/P2_recursive_best_first_search_h_1.txt 
+python run_search.py -p 2 -s 7 >> RESULT/P2_greedy_best_first_graph_search_h_1.txt
+python run_search.py -p 2 -s 8 >> RESULT/P2_astar_search_h_1.txt
+python run_search.py -p 2 -s 9 >> RESULT/P2_astar_search_h_ignore_preconditions.txt
+python run_search.py -p 2 -s 10 >> RESULT/P2_astar_search_h_pg_levelsum.txt
+
+
+python run_search.py -p 3 -s 1 >> RESULT/P3_breadth_first_search.txt 
+python run_search.py -p 3 -s 2 >> RESULT/P3_breadth_first_tree_search.txt 
+python run_search.py -p 3 -s 3 >> RESULT/P3_depth_first_graph_search.txt
+python run_search.py -p 3 -s 4 >> RESULT/P3_depth_limited_search.txt
+python run_search.py -p 3 -s 5 >> RESULT/P3_uniform_cost_search.txt
+python run_search.py -p 3 -s 6 >> RESULT/P3_recursive_best_first_search_h_1.txt 
+python run_search.py -p 3 -s 7 >> RESULT/P3_greedy_best_first_graph_search_h_1.txt
+python run_search.py -p 3 -s 8 >> RESULT/P3_astar_search_h_1.txt  
+python run_search.py -p 3 -s 9 >> RESULT/P3_astar_search_h_ignore_preconditions.txt
+python run_search.py -p 3 -s 10 >> RESULT/P3_astar_search_h_pg_levelsum.txt
