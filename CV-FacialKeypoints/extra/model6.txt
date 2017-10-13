@@ -1,0 +1,15 @@
+model.add(Convolution2D(8, (3,3), input_shape=X_train.shape[1:]))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Dropout(0.3))
+
+model.add(Convolution2D(16, (2,2), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Dropout(0.3))
+
+model.add(Convolution2D(32, (2,2), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Dropout(0.3))
+
+model.add(Flatten())
+model.add(Dense(500))
+model.add(Dropout(0.3))

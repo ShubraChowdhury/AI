@@ -1,0 +1,15 @@
+model.add(Convolution2D(filters=32, kernel_size=3,activation='relu', padding='same', input_shape=X_train.shape[1:]))
+model.add(Convolution2D(filters=32, kernel_size=3,activation='relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+model.add(Convolution2D(filters=64, kernel_size=3,activation='relu', padding='same'))
+model.add(Convolution2D(filters=64, kernel_size=3,activation='relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+
+model.add(Flatten())
+model.add(Dense(512, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(30))

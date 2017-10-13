@@ -1,0 +1,26 @@
+model = Sequential()
+
+model.add(Convolution2D(filters=24, kernel_size=7, padding='same',activation='relu', input_shape=X_train.shape[1:]))
+model.add(MaxPooling2D(pool_size=2))
+model.add(Dropout(0.3))
+model.add(Convolution2D(filters=48, kernel_size=5, padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=2))
+model.add(Dropout(0.25))
+model.add(Convolution2D(filters=96, kernel_size=3, padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=2))
+model.add(Dropout(0.2))
+model.add(Convolution2D(filters=256, kernel_size=2, padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=2))
+model.add(Dropout(0.2))
+model.add(Flatten())
+#model.add(Dense(750, activation='relu'))
+#model.add(Dense(200, activation='relu'))
+model.add(Dense(500, activation='relu'))
+#model.add(Dropout(0.2))
+model.add(Dense(30, activation='softmax'))
+
+
+
+
+# Summarize the model
+model.summary()
